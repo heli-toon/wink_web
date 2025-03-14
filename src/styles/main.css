@@ -1849,3 +1849,6 @@ body.dark .post-item time{color: var(--bg)}
 .apexcharts-toolbar{
   z-index: 0 !important;
 }
+.sitemap {
+  background-color: var(--bg-sec);
+}

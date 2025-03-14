@@ -16,6 +16,7 @@ import './styles/main.css'
 import './styles/bootstrap-icons.min.css'
 
 import { useEffect, useState } from 'react'
+import Sitemap from './pages/Sitemap'
 
 export default function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -56,6 +57,7 @@ export default function App() {
           <Route path='/blog/wink-intro' element={<Blog0 />}></Route>
           <Route path='/nointernet' element={<NoInternet />}></Route>
           <Route path='/privacy-policy' element={<Privacy />}></Route>
+          <Route path='/sitemap' element={<Sitemap />}></Route>
           <Route path='*' element={<Error404 />}></Route>
         </Routes>
       </BrowserRouter>
