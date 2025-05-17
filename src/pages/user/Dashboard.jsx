@@ -1,7 +1,7 @@
-import TopNav from "../components/TopNav";
-import DashNav from "../components/DashNav";
-import PostItem from "../components/PostItem";
-import Backtotop from "../components/Backtotop";
+import TopNav from "../../components/layout/TopNav";
+import DashNav from "../../components/layout/DashNav";
+import PostItem from "../../components/dashboard/PostItem";
+import Backtotop from "../../components/common/Backtotop";
 
 const colors = [
     { main: '#9F6AFF80', time: '#9F6AFF' }, 

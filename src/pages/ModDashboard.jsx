@@ -1,9 +1,9 @@
-import DashNav from "../components/DashNav";
-import TopNav from "../components/TopNav";
-import Backtotop from "../components/Backtotop";
+import DashNav from "../components/layout/DashNav";
+import TopNav from "../components/layout/TopNav";
+import Backtotop from "../components/common/Backtotop";
 import errorimage from '../assets/images/error-page.png'
-import EngagementGraph from "../components/EngagementGraph";
-import TaskTraffic from "../components/TaskTraffic";
+import EngagementGraph from "../components/mod/EngagementGraph";
+import TaskTraffic from "../components/mod/TaskTraffic";
 
 function ModDashboard() {
   window.document.title = "Wink Moderator Dashboard";

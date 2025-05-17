@@ -1,0 +1,45 @@
+LOADER
+
+
+I'm using React Vite. I want to create the dashboard for user. The SVG I sent is the desktop version but it's incomplete. We've only managed to get the Mobile UI done. We need to achieve mobile responsiveness.
+
+
+src/
+├── assets/                      # Images, logos, static files
+├── components/                 
+│   ├── common/                 # Reusable UI elements (buttons, loaders, etc.)
+│   ├── layout/                 # Navbars, sidebars, footers
+│   ├── dashboard/             # Dashboard-specific components
+│   ├── mod/                   # Moderator-specific components (e.g., graphs)
+│   └── tasks/                 # Task-related components (task item, task form)
+│
+├── pages/
+│   ├── auth/                  # Login, Register, etc.
+│   ├── user/                  # User dashboard, profile, etc.
+│   ├── mod/                   # Moderator dashboard pages
+│   ├── blog/                  # Blog list, blog template
+│   ├── public/                # Landing, FAQs, ToS, Sitemap
+│   └── shared/                # 404, NoInternet, messages, etc.
+│
+├── styles/                    # CSS files
+│   └── main.css
+│
+├── utils/                     # Custom hooks and helpers
+│   ├── useAxios.jsx
+│   └── PrivateRoutes.jsx
+│
+├── App.jsx
+└── main.jsx
+
+
+
+| Current File          | Suggested Location                            |
+| --------------------- | --------------------------------------------- |
+| `DashNav.jsx`         | `components/layout/SideNav.jsx`               |
+| `TopNav.jsx`          | `components/layout/TopNav.jsx`                |
+| `MainNavbar.jsx`      | `components/layout/LandingNavbar.jsx`         |
+| `EngagementGraph.jsx` | `components/mod/EngagementGraph.jsx`          |
+| `TaskTraffic.jsx`     | `components/mod/TaskTraffic.jsx`              |
+| `PostItem.jsx`        | `components/tasks/TaskItem.jsx`               |
+| `ProtectedRoutes.jsx` | Merge with or alias `utils/PrivateRoutes.jsx` |
+

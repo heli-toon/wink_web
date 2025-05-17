@@ -1,4 +1,4 @@
-import errorimage from '../assets/images/error-page.png'
+import errorimage from '../../assets/images/error-page.png'
 
 export default function NoInternet() {
     window.document.title = 'Wink | No Internet';

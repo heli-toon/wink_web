@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "/logo.png";
 import { Link } from "react-router-dom";
 
 const MainNavbar = () => {

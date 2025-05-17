@@ -1,4 +1,4 @@
-import errorimage from '../assets/images/error-page.png'
+import errorimage from '../../assets/images/error-page.png'
 export default function Error404() {
   window.document.title = 'Wink | Page Not Found'
   return (

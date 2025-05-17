@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import Footer from "../../components/Footer";
+import Footer from "../../components/layout/Footer";
 import map from "../../assets/images/hero-fullscreen-bg.jpg";
-import MainNavbar from '../../components/MainNavbar';
-import Backtotop from '../../components/Backtotop';
+import MainNavbar from '../../components/layout/MainNavbar';
+import Backtotop from '../../components/common/Backtotop';
 
 export default function Blog0() {
     window.document.title = "Wink | Wink Intro";

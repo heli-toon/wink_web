@@ -1,5 +1,5 @@
-import Footer from "../components/Footer";
-import MainNavbar from "../components/MainNavbar";
+import Footer from "../../components/Footer";
+import MainNavbar from "../../components/MainNavbar";
 
 export default function Blog() {
     return(

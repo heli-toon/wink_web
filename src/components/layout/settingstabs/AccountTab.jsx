@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import noprofile from "../../assets/images/blank-profile-picture.png";
+import noprofile from "../../../assets/images/blank-profile-picture.png";
 
 function AccountTab() {
     const [isDarkTheme, setIsDarkTheme] = useState(false);

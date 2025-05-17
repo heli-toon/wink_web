@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
-import MainNavbar from "../components/MainNavbar";
+import Footer from "../../components/layout/Footer";
+import MainNavbar from "../../components/layout/MainNavbar";
 
 function Sitemap() {
   document.title = 'Wink | Sitemap';

@@ -1,22 +1,22 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Tos from './pages/Tos'
-import Post from './pages/Post'
-import Login from './pages/Login'
-import Error404 from './pages/404'
-import SignUp from './pages/SignUp'
+import Post from './pages/user/Post'
+import Tos from './pages/public/Tos'
 import Privacy from './pages/Privacy'
-import Landing from './pages/Landing'
-import Blog0 from './pages/blogs/Blog0'
-import Settings from './pages/Settings'
-import Dashboard from './pages/Dashboard'
-import NoInternet from './pages/NoInternet'
+import Blog0 from './pages/blog/Blog0'
+import Login from './pages/auth/Login'
+import Settings from './pages/shared/Settings'
+import SignUp from './pages/auth/SignUp'
+import Error404 from './pages/public/404'
+import NoInternet from './pages/public/NoInternet'
+import Sitemap from './pages/public/Sitemap'
+import Landing from './pages/public/Landing'
+import Dashboard from './pages/user/Dashboard'
 import ModDashboard from './pages/ModDashboard'
 // import ProtectedRoute from "./components/ProtectedRoute"
 import './styles/main.css'
 import './styles/bootstrap-icons.min.css'
 
 import { useEffect, useState } from 'react'
-import Sitemap from './pages/Sitemap'
 
 export default function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);

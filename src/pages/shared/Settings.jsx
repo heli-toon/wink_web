@@ -1,11 +1,11 @@
 import { useState } from "react";
-import DashNav from "../components/DashNav"
-import TopNav from "../components/TopNav";
+import DashNav from "../../components/layout/DashNav"
+import TopNav from "../../components/layout/TopNav";
 import "bootstrap"
-import AccountTab from "../components/settingstabs/AccountTab";
+import AccountTab from "../../components/layout/settingstabs/AccountTab";
+import SecurityTab from "../../components/layout/settingstabs/SecurityTab";
+import Backtotop from "../../components/common/Backtotop";
 import { Link, useNavigate } from "react-router-dom";
-import SecurityTab from "../components/settingstabs/SecurityTab";
-import Backtotop from "../components/Backtotop";
 
 export default function Settings() {
     const [activeTab, setActiveTab] = useState('personal');

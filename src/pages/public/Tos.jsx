@@ -1,6 +1,6 @@
-import Backtotop from '../components/Backtotop.jsx'
-import Footer from '../components/Footer.jsx'
-import MainNavbar from '../components/MainNavbar.jsx'
+import Backtotop from '../../components/common/Backtotop.jsx'
+import Footer from '../../components/layout/Footer.jsx'
+import MainNavbar from '../../components/layout/MainNavbar.jsx'
 
 export default function Tos() {
     window.document.title = 'Wink | Terms of Service'
