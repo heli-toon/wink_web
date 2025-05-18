@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import verba from "../assets/images/hero-fullscreen-bg.jpg";
+import verba from "../../assets/images/hero-fullscreen-bg.jpg";
 export default function BlogCollection() {
   return (
     <>

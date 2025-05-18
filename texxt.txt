@@ -43,3 +43,14 @@ src/
 | `PostItem.jsx`        | `components/tasks/TaskItem.jsx`               |
 | `ProtectedRoutes.jsx` | Merge with or alias `utils/PrivateRoutes.jsx` |
 
+
+
+
+
+
+
+
+mainBackgroundColor={colors[index % colors.length].main}
+                            timeBackgroundColor={colors[index % colors.length].time}
+
+    window.document.title = 'Wink - Dashboard';

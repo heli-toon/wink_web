@@ -7,8 +7,8 @@ export default function DashNav() {
         <nav className="dashnavbar">
           <ul className="dashnavbar-nav">
             <li className="logo">
-              <img src={logo} alt="Wink Logo" />
-              <Link title="Dashboard" to="/landing" className="dashnav-link">
+              <Link title="Dashboard" to="/landing" className="dashnav-link" id="wink-link">
+                <img src={logo} alt="Wink Logo" />
                 <span className="link-text">Wink</span>
               </Link>
             </li>

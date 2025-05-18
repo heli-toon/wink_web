@@ -173,6 +173,14 @@ table>:not(caption)>*>* {border-color: var(--gray);}
   filter:brightness(1.2);
 }
 .form-control-c{width:100%}
+.card {
+  transition: transform var(--anim-short), box-shadow var(--anim-short);
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--box-shadow);
+}
+
 /* HEADER */
 #header{
   transition:all var(--anim-mid);
@@ -602,7 +610,7 @@ nav.dashnavbar{
 }
 .dashnav-item{width:100%}
 .dashnav-item:last-child{margin-top:auto}
-.dashnav-link{
+.dashnav-link {
   display:flex;
   align-items:center;
   height:5rem;
@@ -610,6 +618,22 @@ nav.dashnavbar{
   text-decoration:none;
   filter:grayscale(100%) opacity(0.7);
   transition:var(--anim-mid);
+}
+#wink-link{
+  filter: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
+nav.dashnavbar:hover #wink-link {
+  align-self: flex-start !important;
+  margin-left: 1.5rem;
+  width: auto;
+}
+nav.dashnavbar:hover .logo{
+  align-items: start;
+  justify-content: flex-start;
 }
 .dashnav-item > .dashnav-link{
   border-radius:6px;
@@ -640,20 +664,14 @@ main{
   padding:1rem;
   padding-top:7em;
 }
-nav.dashnavbar .logo{
-  text-align:left;
-  background:var(--bg-teri);
-  width:100%;
-  justify-content:center;
-  align-items:center;
-}
 nav.dashnavbar .logo img{
   transform:rotate(0deg);
   transition:transform var(--anim-mid) ease;
 }
 .dashnavbar:hover .logo img{transform:rotate(360deg)}
-.dashnavbar .logo{
-  display:flex;
+nav.dashnavbar .logo{
+  background:var(--bg-teri);
+  width:100%;
   font-weight:bold;
   font-size:1.5rem;
   margin-bottom:1rem;
