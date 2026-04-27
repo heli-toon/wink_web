@@ -1,0 +1,10 @@
+project_id = "wink"
+
+[functions.paystack-initialize]
+verify_jwt = true
+
+[functions.paystack-verify]
+verify_jwt = true
+
+[functions.paystack-webhook]
+verify_jwt = false
