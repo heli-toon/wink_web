@@ -10,7 +10,7 @@ export default function Landing() {
       <header className="sticky top-0 z-30 border-b border-border/60 bg-background/80 backdrop-blur">
         <div className="container flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-md bg-gradient-primary flex items-center justify-center"><Sparkles className="h-4 w-4 text-primary-foreground" /></div>
+            <img src="/logo.svg" alt="Wink" className="h-8 w-8" />
             <span className="font-display text-xl font-bold">Wink</span>
           </Link>
           <nav className="hidden gap-6 text-sm md:flex">
@@ -133,7 +133,7 @@ export default function Landing() {
       <footer className="border-t border-border">
         <div className="container flex flex-col gap-4 py-8 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-7 w-7 rounded-md bg-gradient-primary" />
+            <img src="/logo.svg" alt="Wink" className="h-7 w-7" />
             <span className="font-display text-lg font-bold">Wink</span>
             <span className="text-sm text-muted-foreground">— WorkLink, the task marketplace</span>
           </div>

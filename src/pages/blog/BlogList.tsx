@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { Skeleton } from "@/components/ui/skeleton";
 import { timeAgo } from "@/lib/format";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 interface Post { id: string; slug: string; title: string; excerpt: string | null; cover_url: string | null; published_at: string | null; }
 
@@ -20,7 +20,7 @@ export default function BlogList() {
     <div className="min-h-screen bg-background">
       <header className="border-b border-border">
         <div className="container flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center gap-2"><div className="h-8 w-8 rounded-md bg-gradient-primary flex items-center justify-center"><Sparkles className="h-4 w-4 text-primary-foreground" /></div><span className="font-display text-xl font-bold">Wink Blog</span></Link>
+          <Link to="/" className="flex items-center gap-2"><img src="/logo.svg" alt="Wink" className="h-8 w-8" /><span className="font-display text-xl font-bold">Wink Blog</span></Link>
           <Link to="/tasks" className="text-sm text-muted-foreground hover:text-foreground">Browse tasks</Link>
         </div>
       </header>

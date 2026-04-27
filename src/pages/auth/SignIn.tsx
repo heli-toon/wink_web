@@ -8,7 +8,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import { Sparkles, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 
 const schema = z.object({ email: z.string().email(), password: z.string().min(6) });
 type FormVals = z.infer<typeof schema>;
@@ -33,9 +33,7 @@ export default function SignIn() {
     <div className="min-h-screen bg-gradient-hero flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         <Link to="/" className="mb-6 flex items-center justify-center gap-2">
-          <div className="h-9 w-9 rounded-md bg-gradient-primary flex items-center justify-center">
-            <Sparkles className="h-4 w-4 text-primary-foreground" />
-          </div>
+          <img src="/logo.svg" alt="Wink" className="h-9 w-9" />
           <span className="font-display text-2xl font-bold">Wink</span>
         </Link>
         <div className="rounded-2xl border border-border bg-card p-8 shadow-floating">

@@ -22,6 +22,7 @@ const Profile      = lazy(() => import("./pages/profile/Profile"));
 const BlogList     = lazy(() => import("./pages/blog/BlogList"));
 const BlogPost     = lazy(() => import("./pages/blog/BlogPost"));
 const Admin        = lazy(() => import("./pages/admin/Admin"));
+const Sitemap      = lazy(() => import("./pages/Sitemap"));
 const NotFound     = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -48,6 +49,7 @@ const App = () => (
               <Route path="/auth/sign-up" element={<SignUp />} />
               <Route path="/blog" element={<BlogList />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
+              <Route path="/sitemap" element={<Sitemap />} />
 
               {/* App shell — protected */}
               <Route element={<ProtectedRoute><AppLayout /></ProtectedRoute>}>

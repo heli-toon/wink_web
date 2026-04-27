@@ -1,4 +1,4 @@
-import { Home, Compass, PlusSquare, MessagesSquare, User, Newspaper, ShieldCheck, Sparkles } from "lucide-react";
+import { Home, Compass, PlusSquare, MessagesSquare, User, Newspaper, ShieldCheck } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 import { Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar, SidebarHeader, SidebarFooter } from "@/components/ui/sidebar";
 import { useAuth } from "@/store/auth";
@@ -29,9 +29,7 @@ export function AppSidebar() {
     <Sidebar collapsible="icon" className="border-r border-sidebar-border">
       <SidebarHeader className="px-3 py-4">
         <NavLink to="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-md bg-gradient-primary shadow-elegant">
-            <Sparkles className="h-4 w-4 text-primary-foreground" />
-          </div>
+          <img src="/logo.svg" alt="Wink" className="h-8 w-8" />
           {!collapsed && <span className="font-display text-xl font-bold tracking-tight">Wink</span>}
         </NavLink>
       </SidebarHeader>

@@ -18,7 +18,7 @@ export const AppHeader = () => {
       <SidebarTrigger className="hidden md:inline-flex" />
       <div className="md:hidden flex items-center gap-2">
         <NavLink to="/" className="flex items-center gap-2">
-          <div className="h-7 w-7 rounded-md bg-gradient-primary" />
+          <img src="/logo.svg" alt="Wink" className="h-7 w-7" />
           <span className="font-display text-lg font-bold">Wink</span>
         </NavLink>
       </div>

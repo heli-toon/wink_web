@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { Skeleton } from "@/components/ui/skeleton";
-import { ArrowLeft, Sparkles } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 interface Post { id: string; title: string; content: string; cover_url: string | null; published_at: string | null; excerpt: string | null; }
 
@@ -23,7 +23,7 @@ export default function BlogPost() {
     <div className="min-h-screen bg-background">
       <header className="border-b border-border"><div className="container flex h-16 items-center justify-between">
         <Link to="/blog" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"><ArrowLeft className="h-4 w-4" /> Blog</Link>
-        <Link to="/" className="flex items-center gap-2"><div className="h-7 w-7 rounded-md bg-gradient-primary flex items-center justify-center"><Sparkles className="h-3 w-3 text-primary-foreground" /></div><span className="font-display font-bold">Wink</span></Link>
+        <Link to="/" className="flex items-center gap-2"><img src="/logo.svg" alt="Wink" className="h-7 w-7" /><span className="font-display font-bold">Wink</span></Link>
       </div></header>
       <article className="container max-w-3xl py-12">
         <h1 className="font-display text-4xl font-bold md:text-5xl">{post.title}</h1>
